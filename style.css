@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*, :root{
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 12px;
+}
+
+body{
+    background-color: #ecf2f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.card{
+    border-radius: 15px;
+}
+
+.id img{
+    border-radius: 50%;
+}
+
+.name{
+    padding: 0;
+    margin: 0;
+}
+
+.daniel h2,
+.jonathan h2,
+.patrick h2,
+.daniel .id .name h3,
+.jonathan .id .name h3,
+.patrick .id .name h3{
+    color: #ecf2f8;
+}
+
+.daniel .id .name span,
+.jonathan .id .name span,
+.patrick .id .name span{
+    color: hsla(210, 46%, 95%, .5);
+}
+
+.id .name span{
+    color: hsla(217, 19%, 35%, .5);
+    font-weight: 500;
+}
+
+
+.daniel{
+    background-color: #7541c8;
+}
+
+.jonathan{
+    background-color: #48556a;
+}
+
+.jeanette{
+    background-color: #fff;
+}
+
+.patrick{
+    background-color: #19212e;
+}
+
+.kira{
+    background-color: #fff;
+}
+
+.id{
+    display: flex;
+    align-items: center;
+}
+
+.img{
+    margin-right: 15px;
+}
+
+.name h3{
+    font-size: 15px;
+    height: 10px;
+    font-weight: 600;
+}
+
+.name span{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+/* desktop design */
+@media (min-width: 901px){
+    section{
+        display: grid;
+        grid-template-columns: repeat(4, 400px);
+        grid-template-rows: repeat(2, 400px);
+        gap: 10px;
+    } 
+
+    .card{
+        padding: 20px 30px;
+        box-shadow: 0 0 10px hsla(216, 40%, 79%, 0.915);
+    }
+
+
+    
+    .id .img img{
+        width: 60px;
+        height: 60px;
+    }
+    
+    .daniel{
+        grid-row: 1;
+        grid-column: 1 / span 2;
+    }
+
+    .daniel h2{
+        font-size: 23px;
+    }
+
+
+    .daniel p{
+        font-size: 13px;
+        color: hsla(216, 40%, 79%, 0.915);
+    }
+
+    .jonathan{
+        grid-column: 3;
+        grid-row: 1;  
+    }
+
+    .jeanette{
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    .patrick{
+        grid-column: 2 / span 2;
+        grid-row: 2;
+    }
+
+    .kira{
+        grid-column: 4;
+        grid-row: 1 / span 2;
+    }
+}
+
+/*mobile design */
+@media (max-width: 900px){
+
+}
